@@ -7,6 +7,9 @@
     <Filter Include="CS:GO Hax">
       <UniqueIdentifier>{089782bc-6c96-4a07-87f4-8494b9772f89}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{2c94e5fa-940b-49ed-bc9a-33486d1566a6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="csgohax.cpp">
@@ -15,12 +18,20 @@
     <ClCompile Include="dllmain.cpp">
       <Filter>DllMain</Filter>
     </ClCompile>
+    <ClCompile Include="engine.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="csgohax.h">
       <Filter>CS:GO Hax</Filter>
     </ClInclude>
-    <ClInclude Include="csgo.h" />
+    <ClInclude Include="csgo.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

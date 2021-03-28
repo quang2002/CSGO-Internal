@@ -3,6 +3,7 @@
 
 #pragma once
 #include "stdafx.h"
+#include "engine.h"
 
 class csgohax
 {
@@ -11,10 +12,7 @@ public:
 	static uint32_t __stdcall prepare();
 	static uint32_t __stdcall hack();
 private:
-	static struct variable_t
-	{
-		uint32_t client;
-	} vars;
+	static csgo::engine game;
 };
 
 
